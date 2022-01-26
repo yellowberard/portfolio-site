@@ -1,5 +1,7 @@
 :root {
-    --bckColor: #fcf2e8;
+    --fname: #cc252d;
+    --lname: #fa514c;
+    --bckColor: #fbd9bb;
     --prmText: #eb6262;
     --scdText: #7c203a;
     --slcText: #310B0B;
@@ -8,10 +10,12 @@
 }
 
 [data-theme='dark'] {
-    --bckColor: #1f1b24;
+    --fname: #ffac6a;
+    --lname: #fa514c;
+    --bckColor: #121212;
     --prmText: #eb6262;
-    --scdText: #7c203a;
-    --slcText: #461111;
+    --scdText: #fbd9bb;
+    --slcText: #eb6262;
     font-family: 'Rubik', sans-serif;
 
 }
@@ -22,6 +26,10 @@ body {
     background-color: var(--bckColor);
     scroll-behavior: smooth;
 }
+
+
+/*********HEADER******/
+
 
 .header {
     margin-top: 1.5em;
@@ -36,10 +44,20 @@ body {
 }
 
 .name {
+    display: flex;
+    gap: 3%;
     margin-left: 3em;
     font-size: 2.4em;
     color: var(--prmText);
     font-weight: 600;
+}
+
+.l-name {
+    color: var(--lname);
+}
+
+.f-name {
+    color: var(--fname);
 }
 
 .head-left {
