@@ -1,8 +1,26 @@
+:root {
+    --bckColor: #fcf2e8;
+    --prmText: #eb6262;
+    --scdText: #7c203a;
+    --slcText: #310B0B;
+    font-family: 'Rubik', sans-serif;
+
+}
+
+[data-theme='dark'] {
+    --bckColor: #1f1b24;
+    --prmText: #eb6262;
+    --scdText: #7c203a;
+    --slcText: #461111;
+    font-family: 'Rubik', sans-serif;
+
+}
+
 body {
     width: 100%;
     height: 100%;
-    background-color: #fcf2e8;
-    font-family: 'Rubik', sans-serif;
+    background-color: var(--bckColor);
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -11,12 +29,16 @@ body {
     display: flex;
     gap: 20%;
     width: 100%;
+    cursor: pointer;
+    position: fixed;
+    /* top: 0; */
+    user-select: none;
 }
 
 .name {
     margin-left: 3em;
     font-size: 2.4em;
-    color: #eb6262;
+    color: var(--prmText);
     font-weight: 600;
 }
 
@@ -25,17 +47,36 @@ body {
 }
 
 .head-right {
+
     display: flex;
     gap: 5%;
     width: 60%
 }
 
 .nav-links {
-    color: #504538;
-    font-size: 1.1em;
+    color: var(--scdText);
+    font-size: 1.2em;
 }
 
 a {
     text-decoration: none;
+}
 
+.hide {
+    display: none;
+    visibility: hidden;
+    width: 0px;
+}
+
+.nav-links:hover {
+    color: var(--slcText);
+    font-size: 1.3em;
+}
+
+.light-mode {
+    color: white;
+}
+
+.slctBtn {
+    color: var(--slcText)
 }
