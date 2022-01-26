@@ -69,3 +69,13 @@ cntct_link.addEventListener('click', () => {
     cntct_link.classList.add('slctBtn');
     selectedBtn = cntct_link;
 })
+
+var typed = new Typed('.type', {
+    strings: ['a Web Developer.', 'an Android Developer.', 'a Space Enthusiast.', 'a Speed Cuber.', 'a Bibliophile.'],
+    smartBackspace: true,
+    startDelay: 1000,
+    typeSpeed: 50,
+    backDelay: 1000,
+    backSpeed: 40,
+    loop: true,
+});
