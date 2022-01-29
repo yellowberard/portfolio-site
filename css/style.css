@@ -22,19 +22,25 @@
 
 html {
     width: 100%;
-    heght: 100%;
+    height: 100%;
 }
 
 body {
     width: 100%;
     height: 100%;
+    margin: 0;
     background-color: var(--bckColor);
     scroll-behavior: smooth;
+    font-family: 'Rubik', sans-serif;
 }
 
 .whole {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 /*********HEADER******/
@@ -113,6 +119,43 @@ a {
 
 .home {
     display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    padding-top: 10em;
+    padding-top: 13em;
+    z-index: -1;
+    width: 100%;
+    color: var(--fname)
+}
+
+.home-content {
+    width: 40%
+}
+
+.home-heading {
+    font-size: 3.8em;
+
+}
+
+.home-head-name {
+    font-size: 1.4em;
+}
+
+.home-scLink {
+    color: var(--lname);
+    display: flex;
+    flex-direction: column;
+    margin-left: 1em;
+    font-size: 2em;
+    gap: 10%;
+    height: 5em;
+}
+
+.button {
+    background-color: var(--fname);
+    color: var(--prmText);
+    font-size: 1.3rem;
+    padding: 0.5rem;
+    border-radius: 10%;
+    text-decoration: none;
 }
