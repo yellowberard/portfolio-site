@@ -1,10 +1,11 @@
 :root {
     --fname: #cc252d;
     --lname: #fa514c;
-    --bckColor: #fbd9bb;
-    --prmText: #eb6262;
+    --bckColor: #FFCC99;
+    --prmColor: #eb6262;
     --scdText: #7c203a;
     --slcText: #310B0B;
+    --cntColor: #000;
     font-family: 'Rubik', sans-serif;
 
 }
@@ -13,9 +14,10 @@
     --fname: #ffac6a;
     --lname: #fa514c;
     --bckColor: #121212;
-    --prmText: #eb6262;
-    --scdText: #fbd9bb;
+    --prmColor: #eb6262;
+    --scdColor: #fbd9bb;
     --slcText: #eb6262;
+    --cntColor: #FFCBA4;
     font-family: 'Rubik', sans-serif;
 
 }
@@ -56,6 +58,7 @@ body {
     top: 0;
     user-select: none;
     height: 5%;
+    z-index: 2;
 }
 
 .name {
@@ -87,8 +90,8 @@ body {
 }
 
 .nav-links {
-    color: var(--scdText);
-    font-size: 1.2em;
+    color: var(--scdColor);
+    font-size: 1.2em
 }
 
 a {
@@ -104,7 +107,13 @@ a {
 .nav-links:hover {
     color: var(--slcText);
     font-size: 1.3em;
+    /* border-style: dashed;
+    border-color: #121212;
+    border-radius: 0em; */
+
 }
+
+
 
 .light-mode {
     color: white;
@@ -120,24 +129,57 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
+    /* position: relative; */
     padding-top: 13em;
-    z-index: -1;
+    /* z-index: -1; */
     width: 100%;
-    color: var(--fname)
+    /* color: var(--fname) */
 }
 
+.home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow-x: hidden; */
+    width: 20%;
+}
+
+.my-img {
+    z-index: 1;
+    margin-right: 7rem;
+}
+
+.home-bob {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.bob {
+    position: absolute;
+    height: 37rem;
+    width: 37rem;
+    right: 0rem;
+}
+
+
 .home-content {
-    width: 40%
+    width: 40%;
+    color: var(--cntColor);
 }
 
 .home-heading {
-    font-size: 3.8em;
-
+    font-size: 2.8em;
+    /* color: #121212; */
 }
 
 .home-head-name {
     font-size: 1.4em;
+    /* color: #592427; */
+
+    /* font-weight: 100; */
 }
 
 .home-scLink {
@@ -152,9 +194,21 @@ a {
 
 }
 
+.icon {
+    color: #fa514c;
+}
+
+.home-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 10rem
+}
+
 .button {
-    background-color: var(--fname);
-    color: var(--prmText);
+    background-color: var(--prmColor);
+    color: var(--cntColor);
     font-size: 1.3rem;
     padding: 0.5rem;
     border-radius: 10%;
