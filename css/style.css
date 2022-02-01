@@ -135,10 +135,16 @@ a {
     border-style: solid;
     border-color: var(--fname);
     padding: 1rem;
-
+    border-radius: 10%;
     /* padding-top: 0; */
     /* border-radius: 0em; */
 
+}
+
+.sc-fixed {
+    position: fixed;
+    bottom: 16rem;
+    right: 5.5rem;
 }
 
 .light-mode {
@@ -246,7 +252,6 @@ a {
     position: fixed;
     bottom: 8rem;
     right: 5rem;
-    font-size: 20px;
 }
 
 .top-icon {
@@ -259,18 +264,29 @@ a {
 
 /*********About Me*******/
 
-.about {
+.about,
+.skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20rem;
+    /* margin-top: 10rem; */
+    padding-top: 20rem;
 }
 
 
-.about-head {
+.about-head,
+.skills-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-size: 3rem;
     color: var(--cntColor)
+}
+
+.sub-text {
+    font-size: 1rem;
 }
 
 .about-content {
@@ -293,7 +309,7 @@ a {
 }
 
 .about-para {
-    width: 50%;
+    width: 30%;
 }
 
 .resume-link a {

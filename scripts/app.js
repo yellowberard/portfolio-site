@@ -79,3 +79,34 @@ var typed = new Typed('.type', {
     backSpeed: 40,
     loop: true,
 });
+
+//SCROLL SECTIONS (TODO)
+
+const sections = document.querySelectorAll(".section");
+
+window.addEventListener("scroll", function () {
+    const scrollY = window.pageYOffset;
+
+    sections.forEach((current) => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 60;
+        let sectionId = current.getAttribute("id");
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelector(".menu a[href*=" + sectionId + "]").classList.add("slctBtn");
+
+            if (sectionId != "home") {
+                document.querySelector(".home-scLink").classList.add("sc-fixed");
+            } else {
+                document.querySelector(".home-scLink").classList.remove("sc-fixed");
+            }
+            if (sectionId === "home") {
+                document.querySelector(".top-btn").classList.add("hide");
+            } else {
+                document.querySelector(".top-btn").classList.remove("hide");
+            }
+        } else {
+            document.querySelector(".menu a[href*=" + sectionId + "]").classList.remove("slctBtn");
+        }
+    });
+});
