@@ -42,15 +42,16 @@ body {
 /******Scroll Bar****/
 html::-webkit-scrollbar {
     width: 0.5vw;
-    /* border-radius: 5px; */
 }
 
 html::-webkit-scrollbar-thumb {
     background-color: #fa514c;
+    border-radius: 50px;
 }
 
 html::-webkit-scrollbar-track {
     background-color: #ffcba4;
+    border-radius: 50px;
 }
 
 .whole {
@@ -231,4 +232,11 @@ a {
     padding: 0.5rem;
     border-radius: 10%;
     text-decoration: none;
+}
+
+.top-btn {
+    position: fixed;
+    bottom: 6rem;
+    right: 5rem;
+
 }
