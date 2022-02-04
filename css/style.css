@@ -363,6 +363,7 @@ a {
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
+    cursor: pointer;
 }
 
 .card-label {
@@ -398,7 +399,48 @@ a {
 }
 
 .card-content {
-    width: 80%;
-    height: 20rem;
+    padding: 3%;
+    width: 100%;
+    height: 25rem;
     background-color: var(--scdBckColor);
+}
+
+.skill-specs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20%;
+    height: 15%;
+    margin-top: 10%;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 20%;
+    color: var(--cntColor);
+}
+
+.skill-icon {
+    /* font-size: 0.5rem; */
+    width: 2rem;
+    height: 2rem;
+    color: var(--prmColor);
+}
+
+.skill-level {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.skill-bar {
+    display: inline-block;
+    background-color: var(--prmColor);
+    border-radius: 10%;
+    height: 0.5rem;
+    margin-right: 10%;
 }

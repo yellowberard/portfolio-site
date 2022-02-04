@@ -119,34 +119,32 @@ var card2Btn = document.querySelector(".card-2");
 var card2CntBtn = document.querySelector(".card-2-content");
 var card3Btn = document.querySelector(".card-3");
 var card3CntBtn = document.querySelector(".card-3-content");
-var flag = 1;
-var flag2 = 1
-var flag3 = 1;
+var flag = [1, 1, 1];
 
 card1Btn.addEventListener("click", function () {
-    if (flag === 1) {
+    if (flag[0] === 1) {
         card1CntBtn.classList.remove("hide");
-        flag = 0;
+        flag[0] = 0;
     } else {
         card1CntBtn.classList.add("hide");
-        flag = 1;
+        flag[0] = 1;
     }
 });
 card2Btn.addEventListener("click", function () {
-    if (flag2 === 1) {
+    if (flag[1] === 1) {
         card2CntBtn.classList.remove("hide");
-        flag2 = 0;
+        flag[1] = 0;
     } else {
         card2CntBtn.classList.add("hide");
-        flag2 = 1;
+        flag[1] = 1;
     }
 });
 card3Btn.addEventListener("click", function () {
-    if (flag3 === 1) {
+    if (flag[1] === 1) {
         card3CntBtn.classList.remove("hide");
-        flag3 = 0;
+        flag[1] = 0;
     } else {
         card3CntBtn.classList.add("hide");
-        flag3 = 1;
+        flag[1] = 1;
     }
 });
