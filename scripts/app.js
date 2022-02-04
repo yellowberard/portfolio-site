@@ -96,17 +96,57 @@ window.addEventListener("scroll", function () {
             document.querySelector(".menu a[href*=" + sectionId + "]").classList.add("slctBtn");
 
             if (sectionId != "home") {
-                document.querySelector(".home-scLink").classList.add("sc-fixed");
+                document.querySelector(".sc-fixed").classList.add("sc-show");
             } else {
-                document.querySelector(".home-scLink").classList.remove("sc-fixed");
+                document.querySelector(".sc-fixed").classList.remove("sc-show");
             }
-            if (sectionId === "home") {
-                document.querySelector(".top-btn").classList.add("hide");
+            if (sectionId !== "home") {
+                document.querySelector(".top-btn").classList.add("top-btn-show");
             } else {
-                document.querySelector(".top-btn").classList.remove("hide");
+                document.querySelector(".top-btn").classList.remove("top-btn-show");
             }
         } else {
             document.querySelector(".menu a[href*=" + sectionId + "]").classList.remove("slctBtn");
         }
     });
+});
+
+// Skills
+
+var card1Btn = document.querySelector(".card-1");
+var card1CntBtn = document.querySelector(".card-1-content");
+var card2Btn = document.querySelector(".card-2");
+var card2CntBtn = document.querySelector(".card-2-content");
+var card3Btn = document.querySelector(".card-3");
+var card3CntBtn = document.querySelector(".card-3-content");
+var flag = 1;
+var flag2 = 1
+var flag3 = 1;
+
+card1Btn.addEventListener("click", function () {
+    if (flag === 1) {
+        card1CntBtn.classList.remove("hide");
+        flag = 0;
+    } else {
+        card1CntBtn.classList.add("hide");
+        flag = 1;
+    }
+});
+card2Btn.addEventListener("click", function () {
+    if (flag2 === 1) {
+        card2CntBtn.classList.remove("hide");
+        flag2 = 0;
+    } else {
+        card2CntBtn.classList.add("hide");
+        flag2 = 1;
+    }
+});
+card3Btn.addEventListener("click", function () {
+    if (flag3 === 1) {
+        card3CntBtn.classList.remove("hide");
+        flag3 = 0;
+    } else {
+        card3CntBtn.classList.add("hide");
+        flag3 = 1;
+    }
 });

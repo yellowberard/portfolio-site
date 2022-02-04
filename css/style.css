@@ -7,6 +7,8 @@
     --slcText: #310B0B;
     --cntColor: #000;
     --textColor: #2a2831;
+    --scdBckColor: #f5be88;
+    --trdBCkcolor: #f1b273;
     font-family: 'Rubik', sans-serif;
 
 }
@@ -20,6 +22,8 @@
     --slcText: #eb6262;
     --cntColor: #FFCBA4;
     --textColor: rgb(230, 176, 176);
+    --scdBckColor: rgb(27, 27, 27);
+    --trdBCkcolor: #1f1e1d;
     font-family: 'Rubik', sans-serif;
 
 }
@@ -64,6 +68,13 @@ html::-webkit-scrollbar-track {
     align-items: center;
 }
 
+.hide {
+    display: none;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+}
+
 /*********HEADER******/
 
 
@@ -106,7 +117,7 @@ html::-webkit-scrollbar-track {
 .head-right {
 
     display: flex;
-    gap: 5%;
+    gap: 3%;
     width: 60%
 }
 
@@ -117,35 +128,25 @@ html::-webkit-scrollbar-track {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
+
 }
 
 a {
     text-decoration: none;
 }
 
-.hide {
-    display: none;
-    visibility: hidden;
-    width: 0px;
-}
-
 .nav-links:hover {
     color: var(--slcText);
-    font-size: 1.25em;
+    /* font-size: 1.25em; */
     border-style: solid;
     border-color: var(--fname);
-    padding: 1rem;
     border-radius: 10%;
     /* padding-top: 0; */
     /* border-radius: 0em; */
 
 }
 
-.sc-fixed {
-    position: fixed;
-    bottom: 16rem;
-    right: 5.5rem;
-}
 
 .light-mode {
     color: white;
@@ -227,6 +228,23 @@ a {
 
 }
 
+.sc-fixed {
+    color: var(--lname);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    font-size: 2em;
+    height: 5em;
+    gap: 10%;
+    bottom: 16rem;
+    right: -10%;
+    transition: 0.7s;
+}
+
+.sc-show {
+    right: 5.5rem;
+}
+
 .icon {
     color: #fa514c;
 }
@@ -250,8 +268,13 @@ a {
 
 .top-btn {
     position: fixed;
-    bottom: 8rem;
+    bottom: -20%;
     right: 5rem;
+    transition: 0.7s;
+}
+
+.top-btn-show {
+    bottom: 8rem;
 }
 
 .top-icon {
@@ -266,6 +289,7 @@ a {
 
 .about,
 .skills {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -282,7 +306,7 @@ a {
     align-items: center;
     flex-direction: column;
     font-size: 3rem;
-    color: var(--cntColor)
+    color: var(--cntColor);
 }
 
 .sub-text {
@@ -318,4 +342,63 @@ a {
     align-items: center;
     gap: 0.5rem;
     width: 8rem;
+}
+
+/***********Skills**********/
+
+
+.skills-content {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    gap: 10%;
+}
+
+.skill-card {
+    width: 22rem;
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.card-label {
+
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 7rem;
+    gap: 10%;
+    background-color: var(--trdBCkcolor);
+}
+
+.card-head {
+    width: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    justify-content: center;
+    color: var(--cntColor);
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: var(--cntColor);
+}
+
+.card-para {
+    font-size: 0.7rem;
+}
+
+.card-content {
+    width: 80%;
+    height: 20rem;
+    background-color: var(--scdBckColor);
 }
