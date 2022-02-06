@@ -113,38 +113,26 @@ window.addEventListener("scroll", function () {
 
 // Skills
 
-var card1Btn = document.querySelector(".card-1");
-var card1CntBtn = document.querySelector(".card-1-content");
-var card2Btn = document.querySelector(".card-2");
-var card2CntBtn = document.querySelector(".card-2-content");
-var card3Btn = document.querySelector(".card-3");
-var card3CntBtn = document.querySelector(".card-3-content");
+
+var cardUpIcon = document.querySelectorAll(".card-up-icon")
+var cardLabel = document.querySelectorAll(".card-label");
+var cardContent = document.querySelectorAll(".card-content");
 var flag = [1, 1, 1];
 
-card1Btn.addEventListener("click", function () {
-    if (flag[0] === 1) {
-        card1CntBtn.classList.remove("hide");
-        flag[0] = 0;
-    } else {
-        card1CntBtn.classList.add("hide");
-        flag[0] = 1;
-    }
-});
-card2Btn.addEventListener("click", function () {
-    if (flag[1] === 1) {
-        card2CntBtn.classList.remove("hide");
-        flag[1] = 0;
-    } else {
-        card2CntBtn.classList.add("hide");
-        flag[1] = 1;
-    }
-});
-card3Btn.addEventListener("click", function () {
-    if (flag[1] === 1) {
-        card3CntBtn.classList.remove("hide");
-        flag[1] = 0;
-    } else {
-        card3CntBtn.classList.add("hide");
-        flag[1] = 1;
-    }
-});
+var drop = (i) => {
+    cardLabel[i].addEventListener("click", function () {
+        if (flag[i] === 1) {
+            cardContent[i].classList.remove("hide");
+            flag[i] = 0;
+            cardUpIcon[i].classList.add("flip");
+        } else {
+            cardContent[i].classList.add("hide");
+            flag[i] = 1;
+            cardUpIcon[i].classList.remove("flip");
+        }
+    });
+}
+
+for (var j = 0; j < 3; j++) {
+    drop(j);
+}
