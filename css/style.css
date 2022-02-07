@@ -404,6 +404,20 @@ a {
 
 }
 
+.card-hide {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 300ms ease-in-out,
+        transform 300ms ease-in-out;
+}
+
+.card-show {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 500ms ease-in,
+        transform 500ms ease-in;
+}
+
 .flip {
     transform: rotate(180deg);
 }
