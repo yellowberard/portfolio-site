@@ -122,11 +122,13 @@ var flag = [1, 1, 1];
 var drop = (i) => {
     cardLabel[i].addEventListener("click", function () {
         if (flag[i] === 1) {
-            cardContent[i].classList.remove("hide");
+            cardContent[i].classList.remove("card-hide");
+            cardContent[i].classList.add("card-show");
             flag[i] = 0;
             cardUpIcon[i].classList.add("flip");
         } else {
-            cardContent[i].classList.add("hide");
+            cardContent[i].classList.add("card-hide");
+            cardContent[i].classList.remove("card-show");
             flag[i] = 1;
             cardUpIcon[i].classList.remove("flip");
         }
