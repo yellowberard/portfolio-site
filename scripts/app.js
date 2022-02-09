@@ -138,3 +138,87 @@ var drop = (i) => {
 for (var j = 0; j < 3; j++) {
     drop(j);
 }
+
+// Qualifications
+
+var qualWork = document.querySelector(".qual-c");
+var qualEdu = document.querySelector(".qual-edu-head");
+var qualAch = document.querySelector(".qual-achiev-head");
+var qualCat = document.querySelectorAll(".qual-c");
+var qualTime = document.querySelectorAll(".qual-time");
+var flag1 = [1, 1, 1];
+
+// var timeLineDrop = (i) => {
+//     qualCat[i].addEventListener("click", function () {
+//         if (flag1[i] === 1) {
+//             qualTime[i].classList.remove("card-hide");
+//             qualTime[i].classList.add("card-show");
+//             flag1[i] = 0;
+
+//         } else {
+//             qualTime[i].classList.add("card-hide");
+//             qualTime[i].classList.remove("card-show");
+//             flag1[i] = 1;
+
+//         }
+//     });
+// }
+
+
+// for (var k = 0; k < 3; k++) {
+//     timeLineDrop(k);
+// }
+qualWork.addEventListener("click", function () {
+    if (flag1[0] === 1) {
+        qualTime[0].classList.remove("time-hide");
+        qualTime[0].classList.add("time-show");
+        qualTime[1].classList.remove("time-show");
+        qualTime[2].classList.remove("time-show");
+        qualTime[1].classList.add("time-hide");
+        qualTime[2].classList.add("time-hide");
+
+        flag1[0] = 0;
+
+    } else {
+        qualTime[0].classList.add("time-hide");
+        qualTime[0].classList.remove("time-show");
+        flag1[0] = 1;
+
+    }
+});
+qualEdu.addEventListener("click", function () {
+    if (flag1[1] === 1) {
+        qualTime[1].classList.remove("time-hide");
+        qualTime[1].classList.add("time-show");
+        qualTime[0].classList.remove("time-show");
+        qualTime[2].classList.remove("time-show");
+        qualTime[0].classList.add("time-hide");
+        qualTime[2].classList.add("time-hide");
+
+        flag1[1] = 0;
+
+    } else {
+        qualTime[1].classList.add("time-hide");
+        qualTime[1].classList.remove("time-show");
+        flag1[1] = 1;
+
+    }
+});
+qualAch.addEventListener("click", function () {
+    if (flag1[2] === 1) {
+        qualTime[2].classList.remove("time-hide");
+        qualTime[2].classList.add("time-show");
+        qualTime[1].classList.remove("time-show");
+        qualTime[0].classList.remove("time-show");
+        qualTime[1].classList.add("time-hide");
+        qualTime[0].classList.add("time-hide");
+
+        flag1[2] = 0;
+
+    } else {
+        qualTime[2].classList.add("time-hide");
+        qualTime[2].classList.remove("time-show");
+        flag1[2] = 1;
+
+    }
+});
