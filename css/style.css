@@ -16,7 +16,7 @@
 [data-theme='dark'] {
     --fname: #ffac6a;
     --lname: #fa514c;
-    --bckColor: #121212;
+    --bckColor: #0d0a08;
     --prmColor: #eb6262;
     --scdColor: #fbd9bb;
     --slcText: #eb6262;
@@ -522,6 +522,8 @@ a {
     align-items: center;
     gap: 5%;
     cursor: pointer;
+    color: var(--cntColor);
+
 }
 
 
@@ -553,6 +555,11 @@ a {
     /* transform: translateY(0px); */
     transition: opacity 500ms ease-in,
         transform 500ms ease-in, max-height 500ms ease-in;
+
+}
+
+.timespan {
+    color: var(--cntColor);
 
 }
 
