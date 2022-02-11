@@ -141,7 +141,7 @@ for (var j = 0; j < 3; j++) {
 
 // Qualifications
 
-var qualWork = document.querySelector(".qual-c");
+var qualWork = document.querySelector(".qual-work-head");
 var qualEdu = document.querySelector(".qual-edu-head");
 var qualAch = document.querySelector(".qual-achiev-head");
 var qualCat = document.querySelectorAll(".qual-c");
@@ -168,7 +168,7 @@ var flag1 = [1, 1, 1];
 // for (var k = 0; k < 3; k++) {
 //     timeLineDrop(k);
 // }
-qualWork.addEventListener("click", function () {
+qualEdu.addEventListener("click", function () {
     if (flag1[0] === 1) {
         qualTime[0].classList.remove("time-hide");
         qualTime[0].classList.add("time-show");
@@ -186,7 +186,7 @@ qualWork.addEventListener("click", function () {
 
     }
 });
-qualEdu.addEventListener("click", function () {
+qualWork.addEventListener("click", function () {
     if (flag1[1] === 1) {
         qualTime[1].classList.remove("time-hide");
         qualTime[1].classList.add("time-show");
