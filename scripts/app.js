@@ -82,7 +82,7 @@ var typed = new Typed('.type', {
 
 //SCROLL SECTIONS (TODO)
 
-const sections = document.querySelectorAll(".section");
+var sections = document.querySelectorAll(".section");
 
 window.addEventListener("scroll", function () {
     const scrollY = window.pageYOffset;
@@ -90,12 +90,12 @@ window.addEventListener("scroll", function () {
     sections.forEach((current) => {
         const sectionHeight = current.offsetHeight;
         const sectionTop = current.offsetTop - 60;
-        let sectionId = current.getAttribute("id");
+        var sectionId = current.getAttribute("id");
 
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector(".menu a[href*=" + sectionId + "]").classList.add("slctBtn");
 
-            if (sectionId != "home") {
+            if (sectionId != "home" && sectionId != "contact") {
                 document.querySelector(".sc-fixed").classList.add("sc-show");
             } else {
                 document.querySelector(".sc-fixed").classList.remove("sc-show");
@@ -110,6 +110,10 @@ window.addEventListener("scroll", function () {
         }
     });
 });
+
+
+
+
 
 // Skills
 
@@ -148,26 +152,6 @@ var qualCat = document.querySelectorAll(".qual-c");
 var qualTime = document.querySelectorAll(".qual-time");
 var flag1 = [1, 1, 1];
 
-// var timeLineDrop = (i) => {
-//     qualCat[i].addEventListener("click", function () {
-//         if (flag1[i] === 1) {
-//             qualTime[i].classList.remove("card-hide");
-//             qualTime[i].classList.add("card-show");
-//             flag1[i] = 0;
-
-//         } else {
-//             qualTime[i].classList.add("card-hide");
-//             qualTime[i].classList.remove("card-show");
-//             flag1[i] = 1;
-
-//         }
-//     });
-// }
-
-
-// for (var k = 0; k < 3; k++) {
-//     timeLineDrop(k);
-// }
 qualEdu.addEventListener("click", function () {
     if (flag1[0] === 1) {
         qualEdu.classList.add("time-selected");
@@ -232,3 +216,41 @@ qualAch.addEventListener("click", function () {
 
     }
 });
+
+// Contact ME
+
+const form = document.getElementById("contact-form");
+
+async function handleSubmit(event) {
+    event.preventDefault();
+    var message = document.getElementById("message");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                Accept: "application/json",
+            },
+        })
+
+        .then((response) => {
+            message.innerHTML = "Your message has been sent.";
+            document.querySelector(".msg_style").style.display = "block";
+
+            setTimeout(function () {
+                document.querySelector(".msg_style").style.display = "none";
+            }, 4000);
+            form.reset();
+        })
+        .catch((error) => {
+            message.innerHTML =
+                "Oops! There was a problem delivering your message, please contact via other means.";
+            document.querySelector(".msg_style").style.display = "block";
+
+            setTimeout(function () {
+                document.querySelector(".msg_style").style.display = "none";
+            }, 4000);
+        });
+}
+
+form.addEventListener("submit", handleSubmit);
