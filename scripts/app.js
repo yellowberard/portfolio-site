@@ -170,18 +170,21 @@ var flag1 = [1, 1, 1];
 // }
 qualEdu.addEventListener("click", function () {
     if (flag1[0] === 1) {
+        qualEdu.classList.add("time-selected");
         qualTime[0].classList.remove("time-hide");
+        qualWork.classList.remove("time-selected");
+        qualAch.classList.remove("time-selected");
         qualTime[0].classList.add("time-show");
         qualTime[1].classList.remove("time-show");
         qualTime[2].classList.remove("time-show");
         qualTime[1].classList.add("time-hide");
         qualTime[2].classList.add("time-hide");
-
         flag1[0] = 0;
 
     } else {
         qualTime[0].classList.add("time-hide");
         qualTime[0].classList.remove("time-show");
+        qualEdu.classList.remove("time-selected");
         flag1[0] = 1;
 
     }
@@ -190,16 +193,19 @@ qualWork.addEventListener("click", function () {
     if (flag1[1] === 1) {
         qualTime[1].classList.remove("time-hide");
         qualTime[1].classList.add("time-show");
+        qualEdu.classList.remove("time-selected");
+        qualAch.classList.remove("time-selected");
+        qualWork.classList.add("time-selected");
         qualTime[0].classList.remove("time-show");
         qualTime[2].classList.remove("time-show");
         qualTime[0].classList.add("time-hide");
         qualTime[2].classList.add("time-hide");
-
         flag1[1] = 0;
 
     } else {
         qualTime[1].classList.add("time-hide");
         qualTime[1].classList.remove("time-show");
+        qualWork.classList.remove("time-selected");
         flag1[1] = 1;
 
     }
@@ -208,6 +214,9 @@ qualAch.addEventListener("click", function () {
     if (flag1[2] === 1) {
         qualTime[2].classList.remove("time-hide");
         qualTime[2].classList.add("time-show");
+        qualAch.classList.add("time-selected");
+        qualEdu.classList.remove("time-selected");
+        qualWork.classList.remove("time-selected");
         qualTime[1].classList.remove("time-show");
         qualTime[0].classList.remove("time-show");
         qualTime[1].classList.add("time-hide");
@@ -218,6 +227,7 @@ qualAch.addEventListener("click", function () {
     } else {
         qualTime[2].classList.add("time-hide");
         qualTime[2].classList.remove("time-show");
+        qualAch.classList.remove("time-selected");
         flag1[2] = 1;
 
     }
