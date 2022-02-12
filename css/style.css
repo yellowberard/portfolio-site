@@ -145,7 +145,7 @@ a {
     /* font-size: 1.25em; */
     border-style: solid;
     border-color: var(--fname);
-    border-radius: 10%;
+    border-radius: 0.8rem;
     /* padding-top: 0; */
     /* border-radius: 0em; */
 
@@ -267,7 +267,7 @@ a {
     color: var(--cntColor);
     font-size: 1.3rem;
     padding: 0.5rem;
-    border-radius: 6%;
+    border-radius: 0.6rem;
     text-decoration: none;
 }
 
@@ -666,16 +666,63 @@ a {
 /******Contact ME********/
 .contact-content {
     display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin-top: 7%;
+}
+
+.contact-social-display {
+    display: flex;
+    flex-direction: column;
+    gap: 8%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.contact-social-display a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    color: var(--textColor);
+
+    font-size: 0, 5rem;
+}
+
+.contact-icon {
+    font-size: 2.5rem;
+    color: var(--cntColor);
 
 }
 
-.contact-form {
-    margin-top: 10%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 0.3rem;
+.contact-form-container {
+    width: 50%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10%;
+}
+
+.contact-form {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.7rem;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
 
 .contact-form label {
@@ -688,7 +735,7 @@ a {
 .contact-message {
     background-color: var(--scdBckColor);
     padding: 1rem;
-    border-radius: 5%;
+    border-radius: 0.8rem;
     display: flex;
     flex-direction: column;
     height: 2rem;
@@ -700,17 +747,18 @@ a {
 .contact-message textarea {
     background-color: transparent;
     border: none;
+    border-radius: 0;
+    color: var(--textColor);
 }
 
 .contact-subject {
-    /* grid-column: 1/-1; */
-    width: 10rem;
+    grid-column: 1/-1;
+
 }
 
 .contact-message {
     height: 13rem;
-    grid-column: 4/-4;
-    /* grid-row: 3/-3; */
+    grid-column: 1/-1;
 }
 
 .contact-send button {
@@ -719,7 +767,8 @@ a {
     justify-content: center;
     align-items: center;
     gap: 10%;
-    width: 70%;
+    width: 30%;
+    cursor: pointer;
 }
 
 /******** responsive**********/

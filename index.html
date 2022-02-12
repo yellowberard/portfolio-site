@@ -428,44 +428,46 @@
 
                 </div>
             </div>
-            <div class="certificates section"></div>
+            <div class="certificates section" id="certificate"></div>
             <div class="project section" id="projects"></div>
             <div class="contact section" id="contact">
-                <div class="qual-head">
+                <div class="contact-head">
                     <span>Contact Me</span>
                     <span class="scd-text sub-text">You can reach me if you have any questions</span>
                 </div>
 
                 <div class="contact-content">
-                    <div class="contact-email-display">
-                        <span class="iconify" data-icon="clarity:email-line"></span>
-                        <span class="scd-text">mayankgoel1351@gmail.com</span>
+                    <div class="contact-social-display">
+
+                        <a href="mailto:mayankgoel1351@gmail.com"> <span class="iconify contact-icon"
+                                data-icon="clarity:email-line"></span>mayankgoel1351@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/mayank-goel-55a299200/"><span class="iconify  contact-icon "
+                                data-icon="eva:linkedin-outline"></span>LinkedIn</a>
+                        <a href="https://github.com/yellowberard"><span class="iconify contact-icon" data-icon="charm:github"></span>Github</a>
+                        <a href="https://twitter.com/mayank_235"><span class="iconify contact-icon" data-icon="icon-park-outline:twitter"></span>Twitter</a>
+
                     </div>
                     <div class="contact-form-container">
-                        <form action="https://formspree.io/f/xqknqzvj" method="post" class="contact-form">
+
+                        <form action="https://formspree.io/f/xqknqzvj" method="post" id="contact-form">
+                            <div id="message" class="msg_style"></div>
                             <div class="contact-form">
                                 <div class="contact-name">
-                                    <label for="">
-                                        Full Name
-
-                                    </label>
-                                    <input type="text" name="full name">
+                                    <label for="full-name">Full Name</label>
+                                    <input type="text" name="name" id="full-name" required>
                                 </div>
                                 <div class="contact-email">
-                                    <label for=""> Email </label>
-                                    <input type="email" name="email" id="">
+                                    <label for="user-email"> Email </label>
+                                    <input type="email" name="email" id="user-email" required>
                                 </div>
 
                                 <div class="contact-subject">
-                                    <label for="">Subject</label>
-                                    <input type="text" name="subject" id="">
+                                    <label for="mail-subject">Subject</label>
+                                    <input type="text" name="subject" id="mail-subject" required>
                                 </div>
                                 <div class="contact-message">
-                                    <label for="">
-                                        Message
-
-                                    </label>
-                                    <textarea name="Message" id="" cols="30" rows="10"></textarea>
+                                    <label for="user-message">Message</label>
+                                    <textarea name="Message" id="message" cols="30" rows="10" placeholder="Write Your Message Here" required></textarea>
                                 </div>
                                 <div class="contact-send ">
                                     <button type="submit" class="button">Send <span class="iconify" data-icon="akar-icons:send"></span></button>
