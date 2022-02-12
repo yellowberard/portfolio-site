@@ -4,7 +4,7 @@
     --bckColor: #FFCC99;
     --prmColor: #eb6262;
     --scdColor: #7c203a;
-    --slcText: #310B0B;
+    --slcText: #460c0c;
     --cntColor: #000;
     --textColor: #2a2831;
     --scdBckColor: #f5be88;
@@ -167,9 +167,10 @@ a {
     align-items: center;
     justify-content: center;
     /* position: relative; */
-    padding-top: 13em;
+    /* padding-top: 13em; */
     /* z-index: -1; */
     width: 100%;
+    height: 100vh;
     /* color: var(--fname) */
 }
 
@@ -266,7 +267,7 @@ a {
     color: var(--cntColor);
     font-size: 1.3rem;
     padding: 0.5rem;
-    border-radius: 10%;
+    border-radius: 6%;
     text-decoration: none;
 }
 
@@ -314,6 +315,7 @@ a {
     flex-direction: column;
     font-size: 4rem;
     color: var(--cntColor);
+    cursor: text;
 }
 
 .sub-text {
@@ -346,6 +348,7 @@ a {
     font-size: 1rem;
     letter-spacing: 0.05rem;
     line-height: 1.5rem;
+    cursor: text;
 }
 
 .resume-link a {
@@ -453,6 +456,7 @@ a {
     width: 100%;
     height: 25rem;
     background-color: var(--scdBckColor);
+    cursor: text;
 }
 
 .skill-specs {
@@ -560,7 +564,11 @@ a {
 
 .timespan {
     color: var(--cntColor);
+}
 
+.time-selected {
+    color: var(--slcText);
+    text-decoration-style: wavy;
 }
 
 /****Timelines****/
@@ -629,6 +637,7 @@ a {
     background-color: var(--trdBCkcolor);
     padding: 1rem;
     border-radius: 5px;
+    cursor: text;
 }
 
 .timeline-content h3 {
@@ -652,6 +661,65 @@ a {
 .timeline-item:hover .timeline-dot {
     background-color: var(--cntColor);
 
+}
+
+/******Contact ME********/
+.contact-content {
+    display: flex;
+
+}
+
+.contact-form {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form label {
+    color: var(--cntColor);
+}
+
+.contact-name,
+.contact-email,
+.contact-subject,
+.contact-message {
+    background-color: var(--scdBckColor);
+    padding: 1rem;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    height: 2rem;
+}
+
+.contact-name input,
+.contact-email input,
+.contact-subject input,
+.contact-message textarea {
+    background-color: transparent;
+    border: none;
+}
+
+.contact-subject {
+    /* grid-column: 1/-1; */
+    width: 10rem;
+}
+
+.contact-message {
+    height: 13rem;
+    grid-column: 4/-4;
+    /* grid-row: 3/-3; */
+}
+
+.contact-send button {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    width: 70%;
 }
 
 /******** responsive**********/
