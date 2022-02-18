@@ -219,11 +219,48 @@ qualAch.addEventListener("click", function () {
 
 // Contact ME
 
+// const form = document.getElementById("contact-form");
+
+// async function handleSubmit(event) {
+//     event.preventDefault();
+//     var message = document.getElementById("message");
+//     var data = new FormData(event.target);
+//     fetch(event.target.action, {
+//             method: form.method,
+//             body: data,
+//             headers: {
+//                 Accept: "application/json",
+//             },
+//         })
+
+//         .then((response) => {
+//             message.innerHTML = "Your message has been sent.";
+//             document.querySelector(".msg_style").style.display = "block";
+
+//             setTimeout(function () {
+//                 document.querySelector(".msg_style").style.display = "none";
+//             }, 4000);
+//             form.reset();
+//         })
+//         .catch((error) => {
+//             message.innerHTML =
+//                 "Oops! There was a problem delivering your message, please contact via other means.";
+//             document.querySelector(".msg_style").style.display = "block";
+
+//             setTimeout(function () {
+//                 document.querySelector(".msg_style").style.display = "none";
+//             }, 4000);
+//         });
+// }
+
+// form.addEventListener("submit", handleSubmit);
+
+
 const form = document.getElementById("contact-form");
 
 async function handleSubmit(event) {
     event.preventDefault();
-    var message = document.getElementById("message");
+    var message = document.getElementById("text-message");
     var data = new FormData(event.target);
     fetch(event.target.action, {
             method: form.method,
