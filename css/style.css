@@ -83,6 +83,7 @@ html::-webkit-scrollbar-track {
 
 em {
     text-decoration: underline;
+    font-weight: 600;
 }
 
 /*********HEADER******/
@@ -571,6 +572,10 @@ a {
 
 .timespan {
     color: var(--cntColor);
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 5px;
 }
 
 .time-selected {
@@ -662,7 +667,7 @@ a {
     font-size: 0.9rem;
     font-weight: 300;
     line-height: 1.25rem;
-    letter-spacing: 0.01rem;
+    letter-spacing: 0.03rem;
 }
 
 .timeline-item:hover .timeline-dot {
@@ -675,7 +680,7 @@ a {
 
 
 .projects-container {
-    width: 60%;
+    width: 80%;
     height: 400px;
     margin: 10% auto;
     position: relative;
@@ -769,6 +774,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 5%;
     /* display: flex; */
     /* height: 100%; */
 }
@@ -778,7 +784,7 @@ a {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 60%;
+    width: 40%;
 }
 
 .project-name {
@@ -820,6 +826,21 @@ a {
     color: var(--cntColor);
 
     /* margin: 0 2.5rem; */
+}
+
+.slide-content-right {
+    width: 50%;
+}
+
+.project-demo {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.project-demo video {
+    width: 100%;
+    height: 100%;
 }
 
 /******Contact ME********/
@@ -930,6 +951,9 @@ form {
     cursor: pointer;
 }
 
+.contact {
+    margin-bottom: 10%;
+}
 
 /******** responsive**********/
 
