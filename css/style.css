@@ -43,7 +43,12 @@ body {
     margin: 0;
     background-color: var(--bckColor);
     font-family: 'Rubik', sans-serif;
-    height: 5000px;
+    /* height: 5000px; */
+
+}
+
+* {
+    /* border: 1px solid red; */
 }
 
 /******Scroll Bar****/
@@ -65,7 +70,7 @@ html::-webkit-scrollbar-track {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
+    height: fit-content;
     align-items: center;
 }
 
@@ -294,7 +299,8 @@ a {
 .about,
 .skills,
 .qualifications,
-.contact {
+.contact,
+.project {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -308,7 +314,8 @@ a {
 .about-head,
 .skills-head,
 .qual-head,
-.contact-head {
+.contact-head,
+.project-head {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -663,6 +670,138 @@ a {
 
 }
 
+
+/*******Projects***********/
+
+
+.projects-container {
+    width: 60%;
+    height: 400px;
+    margin: 10% auto;
+    position: relative;
+    /* padding-top: 10%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-container {
+    width: 80%;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.carousel {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    transition: 300ms transform ease-in;
+
+}
+
+.slide {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.left-btn {
+    left: -35px;
+}
+
+.right-btn {
+    right: -35px;
+}
+
+.carousel-nav {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    top: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-nav .carousel-dot {
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 8px 10px;
+    cursor: pointer;
+}
+
+.carousel-dot.active {
+    background: rgba(255, 255, 255, 1);
+}
+
+.slide-content {
+    display: flex;
+    /* height: 100%; */
+}
+
+.slide-content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+}
+
+.project-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    width: 100%;
+    height: fit-content;
+}
+
+.about-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-content-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+}
+
+.project-btn {
+    font-size: 3.5rem;
+    /* margin: 0 2.5rem; */
+}
+
 /******Contact ME********/
 .contact-content {
     display: flex;
@@ -770,6 +909,7 @@ form {
     width: 30%;
     cursor: pointer;
 }
+
 
 /******** responsive**********/
 
