@@ -565,8 +565,8 @@ a {
     opacity: 1;
     max-height: 100rem;
     /* transform: translateY(0px); */
-    transition: opacity 500ms ease-in,
-        transform 500ms ease-in, max-height 500ms ease-in;
+    transition: opacity 700ms ease-in,
+        transform 700ms ease-in, max-height 700ms ease-in;
 
 }
 
@@ -844,22 +844,29 @@ a {
 }
 
 /******Contact ME********/
+
 .contact-content {
     display: flex;
     width: 100%;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     gap: 10%;
     margin-top: 7%;
+    overflow: hidden;
 }
 
 .contact-social-display {
+    /* display: block; */
     display: flex;
     flex-direction: column;
     gap: 8%;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 100%; */
+    /* z-index: 0; */
+    /* width: 50%; */
+    /* overflow: hidden; */
+
 }
 
 .contact-social-display a {
@@ -869,8 +876,10 @@ a {
     align-items: center;
     gap: 2%;
     color: var(--textColor);
-
-    font-size: 0, 5rem;
+    /* width: 100%; */
+    /* height: 100%; */
+    font-size: 1rem;
+    /* z-index: 0; */
 }
 
 .contact-icon {
@@ -884,6 +893,7 @@ a {
     /* display: flex; */
     /* flex-direction: column; */
     /* justify-content: center; */
+    overflow: hidden;
     /* align-items: center; */
 }
 
