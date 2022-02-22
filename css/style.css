@@ -47,9 +47,9 @@ body {
 
 }
 
-* {
-    /* border: 1px solid red; */
-}
+/* * {
+    border: 1px solid red;
+} */
 
 /******Scroll Bar****/
 html::-webkit-scrollbar {
@@ -675,6 +675,51 @@ a {
 
 }
 
+/********Certificates********/
+.certificates-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10rem; */
+    padding-top: 10rem;
+}
+
+.certificate-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 4rem;
+    color: var(--cntColor);
+    cursor: text;
+}
+
+.certi-grid-container {
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 6rem;
+    row-gap: 1rem;
+    width: 80%;
+}
+
+.certi-container {
+    height: auto;
+    width: auto;
+    border-radius: 0.6rem;
+    border: 2px solid var(--fname);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.certi-head {
+    font-size: 1.5rem;
+}
 
 /*******Projects***********/
 
