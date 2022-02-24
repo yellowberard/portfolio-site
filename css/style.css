@@ -48,9 +48,9 @@ body {
 
 }
 
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 
 /******Scroll Bar****/
 html::-webkit-scrollbar {
@@ -721,6 +721,11 @@ a {
 
 .certi-head {
     font-size: 1.5rem;
+}
+
+.certi-sc {
+    /* width: 10%; */
+    right: 5%;
 }
 
 /*******Projects***********/
