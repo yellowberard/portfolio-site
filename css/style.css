@@ -728,6 +728,12 @@ a {
     right: 5%;
 }
 
+.certi-btn a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /*******Projects***********/
 
 
