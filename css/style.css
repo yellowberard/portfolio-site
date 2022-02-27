@@ -67,7 +67,8 @@ html::-webkit-scrollbar-track {
     border-radius: 50px;
 }
 
-.whole {
+.whole,
+.whole-certi {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -703,10 +704,11 @@ a {
     /* height: 60%; */
     padding-top: 10rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     column-gap: 6rem;
     row-gap: 1rem;
     width: 80%;
+    overflow: hidden;
 }
 
 .certi-container {
@@ -1060,6 +1062,63 @@ form {
 
 .contact {
     margin-bottom: 10%;
+}
+
+/**********Footer*******/
+.footer {
+    height: 100%;
+    width: 100%;
+    /* background-color: var(--fname); */
+    background-color: var(--scdBckColor);
+
+    /* padding: 1%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* gap: 30%; */
+}
+
+.foot-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    width: 80%;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    margin-top: 2%;
+}
+
+.foot-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.foot-name a {
+    font-size: 3rem;
+    color: #000;
+}
+
+.foot-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+.foot-social a {
+    font-size: 2rem;
+    color: #000;
+}
+
+.foot-policy {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
 }
 
 /******** responsive**********/
