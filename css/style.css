@@ -704,11 +704,11 @@ a {
     /* height: 60%; */
     padding-top: 10rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     column-gap: 6rem;
     row-gap: 1rem;
     width: 80%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .certi-container {
@@ -1093,12 +1093,13 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: var(--cntColor);
     width: 100%;
 }
 
 .foot-name a {
+    color: var(--cntColor);
     font-size: 3rem;
-    color: #000;
 }
 
 .foot-social {
@@ -1110,13 +1111,14 @@ form {
 
 .foot-social a {
     font-size: 2rem;
-    color: #000;
+    color: var(--cntColor);
 }
 
 .foot-policy {
     margin-top: 3%;
     display: flex;
     justify-content: center;
+    color: var(--cntColor);
     align-items: center;
     margin-bottom: 2%;
 }
