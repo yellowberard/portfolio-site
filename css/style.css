@@ -9,6 +9,7 @@
     --textColor: #2a2831;
     --scdBckColor: #f5be88;
     --trdBCkcolor: #fcc288;
+    --textSlctColor: #fcb773;
     font-family: 'Rubik', sans-serif;
 
 }
@@ -24,6 +25,7 @@
     --textColor: rgb(230, 176, 176);
     --scdBckColor: rgb(27, 27, 27);
     --trdBCkcolor: #1f1e1d;
+    --textSlctColor: #3b3b3a;
     font-family: 'Rubik', sans-serif;
 
 }
@@ -65,6 +67,10 @@ html::-webkit-scrollbar-thumb {
 html::-webkit-scrollbar-track {
     background-color: #ffcba4;
     border-radius: 50px;
+}
+
+::selection {
+    background-color: var(--textSlctColor);
 }
 
 .whole,
