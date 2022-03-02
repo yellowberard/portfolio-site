@@ -87,6 +87,7 @@ html::-webkit-scrollbar-track {
     visibility: hidden;
     width: 0px;
     height: 0px;
+    transition: display 2s;
 }
 
 em {
@@ -857,6 +858,16 @@ a {
     height: 20px;
 }
 
+.carousel-btn-show {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.carousel-btn-hide {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
 .left-btn {
     left: -35px;
 }
@@ -885,7 +896,6 @@ a {
 }
 
 .carousel-dot.active {
-    /* background: rgba(255, 255, 255, 1); */
     background: #fa514c;
 }
 
@@ -894,8 +904,6 @@ a {
     justify-content: center;
     align-items: center;
     gap: 5%;
-    /* display: flex; */
-    /* height: 100%; */
 }
 
 .slide-content-left {
@@ -921,7 +929,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .projects-content-links {
