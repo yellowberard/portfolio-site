@@ -9,6 +9,7 @@
     --textColor: #2a2831;
     --scdBckColor: #f5be88;
     --trdBCkcolor: #fcc288;
+    --textSlctColor: #fcb773;
     font-family: 'Rubik', sans-serif;
 
 }
@@ -24,6 +25,7 @@
     --textColor: rgb(230, 176, 176);
     --scdBckColor: rgb(27, 27, 27);
     --trdBCkcolor: #1f1e1d;
+    --textSlctColor: #3b3b3a;
     font-family: 'Rubik', sans-serif;
 
 }
@@ -67,6 +69,10 @@ html::-webkit-scrollbar-track {
     border-radius: 50px;
 }
 
+::selection {
+    background-color: var(--textSlctColor);
+}
+
 .whole,
 .whole-certi {
     display: flex;
@@ -81,6 +87,7 @@ html::-webkit-scrollbar-track {
     visibility: hidden;
     width: 0px;
     height: 0px;
+    transition: display 2s;
 }
 
 em {
@@ -141,31 +148,45 @@ em {
     align-items: center;
     justify-content: center;
     padding: 1rem;
+    transition: text-decoration-color 700ms;
+    position: relative;
 
+}
+
+.nav-links:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: 0;
+    left: 0;
+    border-radius: 6rem;
+    background-color: var(--fname);
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
 }
 
 a {
     text-decoration: none;
 }
 
-.nav-links:hover {
-    color: var(--slcText);
-    /* font-size: 1.25em; */
-    border-style: solid;
-    border-color: var(--fname);
-    border-radius: 0.8rem;
-    /* padding-top: 0; */
-    /* border-radius: 0em; */
-
+.nav-links:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
+.nav-links:hover {
+    color: var(--slcText);
+
+}
 
 .light-mode {
     color: white;
 }
 
 .slctBtn {
-    color: var(--slcText)
+    color: var(--slcText);
 }
 
 /******** Home *******/
@@ -837,6 +858,16 @@ a {
     height: 20px;
 }
 
+.carousel-btn-show {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.carousel-btn-hide {
+    opacity: 0;
+    transition: opacity 1s;
+}
+
 .left-btn {
     left: -35px;
 }
@@ -865,7 +896,6 @@ a {
 }
 
 .carousel-dot.active {
-    /* background: rgba(255, 255, 255, 1); */
     background: #fa514c;
 }
 
@@ -874,8 +904,6 @@ a {
     justify-content: center;
     align-items: center;
     gap: 5%;
-    /* display: flex; */
-    /* height: 100%; */
 }
 
 .slide-content-left {
@@ -901,7 +929,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .projects-content-links {
