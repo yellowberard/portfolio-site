@@ -358,21 +358,18 @@ function hideButton(targetSlide, slides) {
     if (targetSlide === slides[0]) {
         previousButton.classList.add("carousel-btn-hide");
         nextButton.classList.remove("carousel-btn-hide");
-        // previousButton.classList.remove("hide");
         nextButton.classList.remove("carousel-btn-show");
         nextButton.classList.add("carousel-btn-show");
 
     } else if (targetSlide === slides[slides.length - 1]) {
         // If the target slide is the last slide the next button must be hidden
         // and the previous button must be shown
-        // previousButton.classList.remove("hide");
         nextButton.classList.add("carousel-btn-hide");
         previousButton.classList.remove("carousel-btn-hide");
         nextButton.classList.add("carousel-btn-show");
         // previousButton.classList.add("carousel-btn-show");
     } else {
-        // if none of the above is true, we show both the next and prevoius button
-        // previousButton.classList.remove("hide");
+        // if none of the above is true, we show both the next and prevoius button        
         previousButton.classList.remove("carousel-btn-hide");
         previousButton.classList.add("carousel-btn-show");
         nextButton.classList.add("carousel-btn-show");
