@@ -44,10 +44,10 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
+    padding: 0;
     background-color: var(--bckColor);
     font-family: 'Rubik', sans-serif;
-    /* height: 5000px; */
-
+    overflow-x: hidden;
 }
 
 /* * {
@@ -90,9 +90,10 @@ html::-webkit-scrollbar-track {
     transition: display 2s;
 }
 
-em {
-    text-decoration: underline;
-    font-weight: 600;
+
+mark {
+    background: transparent;
+    font-weight: 700;
 }
 
 /*********HEADER******/
