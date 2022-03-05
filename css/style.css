@@ -47,7 +47,7 @@ body {
     padding: 0;
     background-color: var(--bckColor);
     font-family: 'Rubik', sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 /* * {
@@ -144,7 +144,6 @@ mark {
 .nav-links {
     color: var(--scdColor);
     font-size: 1.2em;
-    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1152,23 +1151,3 @@ form {
 }
 
 /******** responsive**********/
-
-@media(max-width: 767px) {
-    .timeline-items::before {
-        left: 7px;
-    }
-
-    .timeline-item:nth-child(odd) {
-        padding-right: 0;
-        text-align: left;
-    }
-
-    .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even) {
-        padding-left: 37px;
-    }
-
-    .timeline-dot {
-        left: 0;
-    }
-}
