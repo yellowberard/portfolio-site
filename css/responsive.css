@@ -1,0 +1,99 @@
+@media(max-width:1441px) {
+
+    /****Header****/
+    .header {
+        gap: 13%;
+        margin-left: 1em;
+    }
+
+    .head-right {
+        gap: 1%;
+    }
+
+    .nav-links {
+        padding: 0.7rem;
+    }
+
+    /*****Skills***/
+    .skills-content {
+        gap: 5%;
+        width: 80%;
+    }
+}
+
+@media(max-width:1023px) {
+
+    /****Header****/
+    .header {
+        margin-left: 0.5rem;
+        gap: 5%;
+    }
+
+    .name {
+        margin-left: 0.5rem;
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        padding: 0.3rem;
+        font-size: 1.1rem;
+    }
+
+    /****home****/
+    .bob {
+        height: 28rem;
+        width: 28rem;
+        right: -1rem;
+    }
+
+    /*****Skills***/
+    .skills-content {
+        width: 60%;
+        gap: 5%;
+    }
+
+    .skill-card {
+        width: 18rem;
+    }
+
+    .card-label {
+        width: 80%;
+        /* padding: 0.7rem; */
+    }
+
+    .card-content {
+        width: 80%;
+    }
+
+    /*****Projects******/
+    .projects-container {
+        width: 70%;
+        height: 600px;
+    }
+
+    .carousel-container {
+        height: 600px;
+    }
+}
+
+@media(max-width: 767px) {
+    .timeline-items::before {
+        left: 7px;
+    }
+
+    .timeline-item:nth-child(odd) {
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 37px;
+    }
+
+    .timeline-dot {
+        left: 0;
+    }
+}
+
+@media(max-width:424px) {}

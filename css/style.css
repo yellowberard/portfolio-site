@@ -37,7 +37,9 @@ html {
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: #fa514c #ffcba4;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -47,8 +49,8 @@ body {
     padding: 0;
     background-color: var(--bckColor);
     font-family: 'Rubik', sans-serif;
-    overflow-x: hidden;
 }
+
 
 /* * {
     border: 1px solid red;
@@ -94,6 +96,7 @@ html::-webkit-scrollbar-track {
 mark {
     background: transparent;
     font-weight: 700;
+    color: var(--cntColor);
 }
 
 /*********HEADER******/
@@ -138,13 +141,12 @@ mark {
 .head-right {
     display: flex;
     gap: 3%;
-    width: 60%
+    width: 70%
 }
 
 .nav-links {
     color: var(--scdColor);
     font-size: 1.2em;
-    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,26 +198,19 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* position: relative; */
-    /* padding-top: 13em; */
-    /* z-index: -1; */
     width: 100%;
     height: 100vh;
-    /* color: var(--fname) */
+    gap: 1%;
+    /* padding: 1rem;    */
 }
 
 .home-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* overflow-x: hidden; */
     width: 20%;
+    margin-left: 4%;
 }
-
-/* .my-img {
-    z-index: 1;
-    margin-right: 7rem;
-} */
 
 .home-bob {
     position: relative;
@@ -223,6 +218,7 @@ a {
     justify-content: center;
     align-items: center;
     height: 10vh;
+    width: 100%;
 }
 
 .bob {
@@ -230,9 +226,7 @@ a {
     height: 37rem;
     width: 37rem;
     right: -1.5rem;
-    /* left: 0.1em; */
 }
-
 
 .home-content {
     width: 40%;
@@ -241,14 +235,10 @@ a {
 
 .home-heading {
     font-size: 2.8em;
-    /* color: #121212; */
 }
 
 .home-head-name {
     font-size: 1.4em;
-    /* color: #592427; */
-
-    /* font-weight: 100; */
 }
 
 .home-scLink {
@@ -263,6 +253,16 @@ a {
 
 }
 
+
+.home-content a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 10rem
+}
+
+/*********Social Fixed*********/
 .sc-fixed {
     color: var(--lname);
     display: flex;
@@ -277,19 +277,11 @@ a {
 }
 
 .sc-show {
-    right: 5.5rem;
+    right: 5%;
 }
 
 .icon {
     color: #fa514c;
-}
-
-.home-content a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-    width: 10rem
 }
 
 .button {
@@ -303,13 +295,13 @@ a {
 
 .top-btn {
     position: fixed;
-    bottom: -20%;
-    right: 5rem;
+    bottom: -10%;
+    right: 4.6%;
     transition: 0.7s;
 }
 
 .top-btn-show {
-    bottom: 8rem;
+    bottom: 12%;
 }
 
 .top-icon {
@@ -396,9 +388,7 @@ a {
 
 .skills-content {
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
-    /* align-items: center; */
     width: 100%;
     gap: 10%;
 }
@@ -408,18 +398,15 @@ a {
     display: flex;
     margin-top: 5rem;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     cursor: pointer;
     user-select: none;
 }
 
 .card-label {
-
     padding: 0.5rem;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex-direction: column;
     width: 100%;
     height: 7rem;
@@ -431,7 +418,6 @@ a {
     width: 100%;
     font-size: 1.5rem;
     display: flex;
-    /* gap: 5%; */
     align-items: center;
     justify-content: space-between;
     color: var(--cntColor);
@@ -447,8 +433,6 @@ a {
 .card-up-icon {
     font-size: 2rem;
     transition: 0.6s;
-    /* transform: rotate(180deg); */
-
 }
 
 .card-hide {
@@ -565,7 +549,7 @@ a {
 
 .qual-timelines {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -805,7 +789,6 @@ a {
     height: 400px;
     margin: 10% auto;
     position: relative;
-    /* padding-top: 10%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -824,7 +807,6 @@ a {
     margin: 0;
     list-style: none;
     transition: 300ms transform ease-in;
-
 }
 
 .slide {
@@ -832,7 +814,7 @@ a {
     margin: 0;
     position: absolute;
     width: 100%;
-    height: fit-content;
+    /* height: fit-content; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -879,7 +861,7 @@ a {
 
 .carousel-nav {
     width: 100%;
-    height: 30px;
+    /* height: 30px; */
     position: absolute;
     top: 400px;
     display: flex;
@@ -1152,23 +1134,3 @@ form {
 }
 
 /******** responsive**********/
-
-@media(max-width: 767px) {
-    .timeline-items::before {
-        left: 7px;
-    }
-
-    .timeline-item:nth-child(odd) {
-        padding-right: 0;
-        text-align: left;
-    }
-
-    .timeline-item:nth-child(odd),
-    .timeline-item:nth-child(even) {
-        padding-left: 37px;
-    }
-
-    .timeline-dot {
-        left: 0;
-    }
-}
