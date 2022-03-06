@@ -192,6 +192,60 @@ a {
     color: var(--slcText);
 }
 
+/*****header small****/
+
+
+.header-small-head {
+    position: fixed;
+    background-color: var(--bckColor);
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 1%;
+    z-index: 2;
+    width: 80%;
+    gap: 50%;
+    opacity: 0;
+    transition: bottom, 3s;
+
+}
+
+.headerUp-btn {
+    cursor: pointer;
+}
+
+.header-small-head-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-small-content {
+    background-color: var(--bckColor);
+    /* background-color: green; */
+    position: fixed;
+    margin-top: 10%;
+    z-index: 2;
+    width: 80%;
+    bottom: 1%;
+    transition: bottom, 3s;
+    /* display: flex; */
+}
+
+.header-small-hide {
+    bottom: -30%;
+    transition: bottom, 3s;
+}
+
+
+.header-small-navs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-row-gap: 5%;
+    grid-column-gap: 5%;
+}
+
 /******** Home *******/
 
 .home {

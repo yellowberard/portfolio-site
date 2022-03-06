@@ -70,6 +70,21 @@ cntct_link.addEventListener('click', () => {
     selectedBtn = cntct_link;
 })
 
+// Header small
+var smallHeaderHead = document.querySelector(".header-small-head");
+var smallHeaderContent = document.querySelector(".header-small-content");
+var headerUpBtn = document.querySelector(".headerUp-btn");
+var headerDownBtn = document.querySelector(".headerDown-btn");
+
+headerUpBtn.addEventListener('click', function () {
+    smallHeaderHead.classList.add("header-small-hide");
+    smallHeaderContent.classList.remove("header-small-hide");
+});
+headerDownBtn.addEventListener('click', function () {
+    smallHeaderContent.classList.add("header-small-hide");
+    smallHeaderHead.classList.toggle("header-small-hide");
+});
+
 var typed = new Typed('.type', {
     strings: ['a Web Developer.', 'a C++ Programmer.', 'a QA Tester.', 'a Gamer.'],
     smartBackspace: true,
