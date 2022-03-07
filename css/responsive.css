@@ -21,7 +21,25 @@
     }
 }
 
-@media(max-width:1023px) {
+@media(max-width:1250px) {
+    .header {
+        margin-left: 0.8rem;
+        gap: 8%;
+    }
+
+    .name {
+        margin-left: 0.8rem;
+        font-size: 2.3rem;
+    }
+
+    .nav-links {
+        padding: 0.7rem;
+        font-size: 1.1rem;
+    }
+
+}
+
+@media(max-width:1024px) {
 
     /****Header****/
     .header {
@@ -76,7 +94,86 @@
     }
 }
 
+@media(max-width:850px) {
+    .header {
+        opacity: 0;
+    }
+
+    .header-small-head {
+        opacity: 1;
+    }
+
+    .home-heading {
+        font-size: 1.5rem;
+    }
+
+    .home-head-name {
+        font-size: 2.6rem;
+    }
+
+    .typing-effects {
+        font-size: 0.9rem;
+    }
+
+    .bob {
+        height: 22rem;
+        width: 22rem;
+        right: -1rem;
+    }
+
+    .home {
+        height: 50vh;
+    }
+}
+
 @media(max-width: 767px) {
+    .bob {
+        width: 20rem;
+        /* margin-bottom: 10%; */
+    }
+
+    .home {
+        flex-direction: column;
+        /* gap: 5%; */
+        margin-top: 10%;
+        justify-content: space-between;
+        height: 70vh;
+    }
+
+    .home-img {
+        width: 80%;
+    }
+
+    .bob {
+        margin-bottom: 0;
+        margin-top: 1%;
+        right: 20%;
+    }
+
+    .home-content {
+        width: 80%;
+    }
+
+    .home-scLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .skills-content {
+        flex-direction: column;
+    }
+
+    .about,
+    .skills,
+    .qualifications,
+    .contact,
+    .project {
+        padding-top: 15rem;
+    }
+
     .timeline-items::before {
         left: 7px;
     }
