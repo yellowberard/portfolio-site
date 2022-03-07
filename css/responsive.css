@@ -166,6 +166,10 @@
         flex-direction: column;
     }
 
+    .slide-content {
+        flex-direction: column;
+    }
+
     .about,
     .skills,
     .qualifications,
