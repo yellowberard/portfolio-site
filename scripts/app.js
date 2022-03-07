@@ -77,16 +77,16 @@ var headerUpBtn = document.querySelector(".headerUp-btn");
 var headerDownBtn = document.querySelector(".headerDown-btn");
 
 headerUpBtn.addEventListener('click', function () {
-    smallHeaderHead.classList.remove("header-show");
+    // smallHeaderHead.classList.remove("header-show");
     smallHeaderHead.classList.add("header-small-hide");
     smallHeaderContent.classList.remove("header-small-hide");
-    smallHeaderContent.classList.add("header-show");
+    // smallHeaderContent.classList.add("header-show");
 });
 headerDownBtn.addEventListener('click', function () {
     smallHeaderContent.classList.add("header-small-hide");
-    smallHeaderContent.classList.remove("header-show");
+    // smallHeaderContent.classList.remove("header-show");
     smallHeaderHead.classList.remove("header-small-hide");
-    smallHeaderHead.classList.add("header-show");
+    // smallHeaderHead.classList.add("header-show");
 });
 
 var typed = new Typed('.type', {
