@@ -1,7 +1,7 @@
 :root {
     --fname: #cc252d;
     --lname: #fa514c;
-    --bckColor: #FFCC99;
+    --bckColor: #FFECCC;
     --prmColor: #eb6262;
     --scdColor: #7c203a;
     --slcText: #460c0c;
@@ -206,8 +206,9 @@ a {
     z-index: 2;
     width: 90%;
     gap: 50%;
+    bottom: 0.1%;
     opacity: 0;
-    transition: 2s;
+    /* transition: 2s; */
 
 }
 
@@ -230,17 +231,16 @@ a {
     z-index: 2;
     width: 90%;
     /* bottom: 0.1%; */
-    transition: 2s;
+    bottom: 0.1%;
+    /* transition: 2s; */
     /* display: flex; */
 }
 
-.header-show {
-    bottom: 0.1%;
-}
+.header-show {}
 
 .header-small-hide {
     bottom: -30%;
-    transition: 2s;
+    /* transition: 2s; */
 }
 
 
