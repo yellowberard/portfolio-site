@@ -180,8 +180,8 @@ a {
 }
 
 .nav-links:hover {
-    color: var(--slcText);
-
+    /* color: var(--slcText); */
+    color: var(--lname);
 }
 
 .light-mode {
@@ -189,7 +189,9 @@ a {
 }
 
 .slctBtn {
-    color: var(--slcText);
+    /* color: var(--slcText); */
+    color: var(--lname);
+
 }
 
 /*****header small****/
@@ -345,7 +347,8 @@ a {
 
 .button {
     background-color: var(--prmColor);
-    color: var(--cntColor);
+    /* color: var(--cntColor); */
+    color: #000;
     font-size: 1.3rem;
     padding: 0.5rem;
     border-radius: 0.6rem;
@@ -1058,6 +1061,21 @@ a {
   .prev:hover, .next:hover {
       background-color: rgba(0,0,0,0.8);
   }*/
+.projects-content-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    width: 100%;
+}
+
+.projects-content-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 2%;
+}
 
 .slide {
     display: flex;
