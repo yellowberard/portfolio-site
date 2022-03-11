@@ -114,6 +114,15 @@
         font-size: 2.6rem;
     }
 
+    .skills-content {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .skill-card {
+        width: 90%;
+    }
+
     .typing-effects {
         font-size: 0.9rem;
     }
@@ -126,6 +135,14 @@
 
     .home {
         height: 50vh;
+    }
+
+    .slide {
+        flex-direction: column;
+    }
+
+    .slide video {
+        width: 90%;
     }
 }
 
@@ -167,7 +184,12 @@
     }
 
     .skills-content {
+        width: 80%;
         flex-direction: column;
+    }
+
+    .skill-card {
+        width: 90%;
     }
 
     .slide-content {
@@ -215,6 +237,19 @@
         margin-top: 10%;
         margin-bottom: 30%;
     }
+
+    .qual-category {
+        flex-direction: column;
+        column-gap: 15%;
+    }
+
+    .qual-category div {
+        padding: 5%;
+    }
+
+    .timeline-content {
+        width: 100%;
+    }
 }
 
 @media(max-width:424px) {
@@ -230,6 +265,10 @@
     .home-bob {
         margin-top: 15%;
         margin-bottom: 30%;
+    }
+
+    .timeline-content {
+        width: 70%;
     }
 }
 
