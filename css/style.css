@@ -232,6 +232,7 @@ a {
     z-index: 2;
     width: 90%;
     transition: 2s;
+    overflow-y: scroll;
 }
 
 .header-show {
@@ -454,6 +455,7 @@ a {
 .skills-content {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     gap: 10%;
 }
@@ -588,7 +590,6 @@ a {
     justify-content: center;
     align-items: center;
     user-select: none;
-
 }
 
 .qual-category {
@@ -658,15 +659,12 @@ a {
 
 /****Timelines****/
 .timeline-section {
-    /* background-color: #24292d; */
-    /* min-height: 100vh; */
     padding: 50px 15px;
     width: 50%;
 }
 
 .timeline-items {
     max-width: 100%;
-    /* margin: auto; */
     display: flex;
     flex-wrap: wrap;
     position: relative;
@@ -718,7 +716,6 @@ a {
 }
 
 .timeline-content {
-    /* width: 50%; */
     background-color: var(--trdBCkcolor);
     padding: 1rem;
     border-radius: 5px;
