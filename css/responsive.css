@@ -37,6 +37,9 @@
         font-size: 1.1rem;
     }
 
+    .bob {
+        width: 30rem
+    }
 }
 
 @media(max-width:1024px) {
@@ -59,9 +62,9 @@
 
     /****home****/
     .bob {
-        height: 28rem;
-        width: 28rem;
-        right: -1rem;
+        height: 26rem;
+        width: 26rem;
+        /* right: -1rem; */
     }
 
     /*****Skills***/
@@ -116,9 +119,9 @@
     }
 
     .bob {
-        height: 22rem;
-        width: 22rem;
-        right: -1rem;
+        height: 24rem;
+        width: 24rem;
+        /* right: -1rem; */
     }
 
     .home {
@@ -127,10 +130,7 @@
 }
 
 @media(max-width: 767px) {
-    .bob {
-        width: 20rem;
-        /* margin-bottom: 10%; */
-    }
+
 
     .home {
         flex-direction: column;
@@ -145,9 +145,13 @@
     }
 
     .bob {
-        margin-bottom: 0;
-        margin-top: 1%;
-        right: 20%;
+        width: 24rem;
+    }
+
+    .home-bob {
+        margin-top: 10%;
+        margin-bottom: 30%;
+        margin-right: 10%;
     }
 
     .home-content {
@@ -197,4 +201,55 @@
     }
 }
 
-@media(max-width:424px) {}
+@media (max-width:600px) {
+    .header-small-head {
+        gap: 30%;
+    }
+
+    .bob {
+        /* margin-top: 8%; */
+        width: 22rem;
+    }
+
+    .home-bob {
+        margin-top: 10%;
+        margin-bottom: 30%;
+    }
+}
+
+@media(max-width:424px) {
+    .header-small-head {
+        gap: 15%;
+        padding: 1%;
+    }
+
+    .bob {
+        width: 20rem;
+    }
+
+    .home-bob {
+        margin-top: 15%;
+        margin-bottom: 30%;
+    }
+}
+
+@media(max-width:320px) {
+    .header-small-head {
+        gap: 10%;
+        padding: 1%;
+    }
+
+    .small-head-name {
+        font-size: 1.3rem;
+    }
+
+    .bob {
+        width: 18rem;
+    }
+
+    .home-bob {
+        margin-top: 25%;
+        margin-left: 25%;
+        margin-bottom: 20%;
+    }
+}
