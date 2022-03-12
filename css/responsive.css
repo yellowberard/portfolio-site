@@ -202,6 +202,20 @@
         width: 80%;
     }
 
+    .about-img {
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .about-content {
+        margin: 6rem;
+        flex-direction: column-reverse;
+    }
+
+    .about-para {
+        width: 80%;
+    }
+
     .skills-content {
         width: 80%;
         flex-direction: column;
@@ -305,6 +319,24 @@
     .timeline-content {
         width: 70%;
     }
+
+    .about-img {
+        width: 18rem;
+        height: 18rem;
+    }
+
+    .about-img img {
+        width: 17rem;
+        height: 17rem;
+    }
+
+    .about-head,
+    .skills-head,
+    .qual-head,
+    .contact-head,
+    .project-head {
+        font-size: 3.4rem;
+    }
 }
 
 @media(max-width:320px) {
@@ -325,5 +357,27 @@
         margin-top: 25%;
         margin-left: 25%;
         margin-bottom: 20%;
+    }
+
+    .qual-head {
+        font-size: 2.9rem;
+    }
+
+    .skills-content {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .skill-card {
+        width: 90%;
+    }
+
+    .timeline-content {
+        width: 100%;
+    }
+
+    .qual-head span:nth-child(2) {
+        font-size: 0.7rem;
+
     }
 }
