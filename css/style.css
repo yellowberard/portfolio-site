@@ -33,7 +33,6 @@
 html {
     width: 100%;
     height: 100%;
-    /* overflow-y: scroll; */
     scroll-behavior: smooth;
     scrollbar-width: thin;
     scrollbar-color: #fa514c #ffcba4;
@@ -51,8 +50,8 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
-
-/* * {
+/* 
+* {
     border: 1px solid red;
 } */
 
@@ -180,7 +179,6 @@ a {
 }
 
 .nav-links:hover {
-    /* color: var(--slcText); */
     color: var(--lname);
 }
 
@@ -240,7 +238,7 @@ a {
 }
 
 .header-small-hide {
-    bottom: -30%;
+    bottom: -70%;
     transition: 2s;
 }
 
@@ -266,7 +264,6 @@ a {
     width: 100%;
     height: 80vh;
     gap: 1%;
-    /* padding: 1rem;    */
 }
 
 .home-img {
@@ -351,7 +348,6 @@ a {
 
 .button {
     background-color: var(--prmColor);
-    /* color: var(--cntColor); */
     color: #000;
     font-size: 1.3rem;
     padding: 0.5rem;
@@ -389,7 +385,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-top: 10rem; */
     padding-top: 20rem;
 }
 
@@ -560,7 +555,6 @@ a {
 }
 
 .skill-icon {
-    /* font-size: 0.5rem; */
     width: 2rem;
     height: 2rem;
     color: var(--prmColor);
@@ -638,7 +632,6 @@ a {
 .time-show {
     opacity: 1;
     max-height: 100rem;
-    /* transform: translateY(0px); */
     transition: opacity 700ms ease-in,
         transform 700ms ease-in, max-height 700ms ease-in;
 
@@ -648,7 +641,6 @@ a {
     color: var(--cntColor);
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     gap: 5px;
 }
 
@@ -752,7 +744,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-top: 10rem; */
     padding-top: 10rem;
     margin-bottom: 10%;
 }
@@ -768,18 +759,15 @@ a {
 }
 
 .certi-grid-container {
-    /* height: 60%; */
     padding-top: 10rem;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     column-gap: 6rem;
     row-gap: 1rem;
     width: 80%;
-    /* overflow: hidden; */
 }
 
 .certi-container {
-    /* height: minmax(auto, 50%); */
     height: 350px;
     width: auto;
     border-radius: 0.6rem;
@@ -815,7 +803,6 @@ a {
 }
 
 .certi-sc {
-    /* width: 10%; */
     right: 5%;
 }
 
@@ -828,7 +815,6 @@ a {
 }
 
 .certi-info li {
-    /* text-align: center; */
     padding-top: 1%;
 }
 
@@ -888,10 +874,6 @@ a {
     border-radius: 3px 0 0 3px;
 }
 
-/*
-  .prev:hover, .next:hover {
-      background-color: rgba(0,0,0,0.8);
-  }*/
 .projects-content-links {
     display: flex;
     align-items: center;
@@ -941,7 +923,6 @@ a {
     margin-right: 10px;
     display: flex;
     flex-direction: column;
-    /* align-items: space-between; */
     width: 100%;
 }
 
@@ -990,7 +971,6 @@ a {
 
 .active-dot,
 .dot:hover {
-    /* background-color: var(--btns); */
     background-color: var(--prmColor);
 }
 
@@ -1018,14 +998,12 @@ a {
     display: flex;
     width: 100%;
     justify-content: center;
-    /* align-items: center; */
     gap: 10%;
     margin-top: 7%;
     overflow: hidden;
 }
 
 .contact-social-display {
-    /* display: block; */
     display: flex;
     flex-direction: column;
     gap: 8%;
@@ -1038,10 +1016,8 @@ a {
     align-items: center;
     gap: 2%;
     color: var(--textColor);
-    /* width: 100%; */
-    /* height: 100%; */
     font-size: 1rem;
-    /* z-index: 0; */
+
 }
 
 .contact-icon {
@@ -1052,7 +1028,7 @@ a {
 
 .contact-form-container {
     width: 50%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 form {
@@ -1072,8 +1048,9 @@ form {
     width: 100%;
 }
 
-.contact-form label {
+.contact-form div label {
     color: var(--cntColor);
+    /* margin-top: 10%; */
 }
 
 .contact-name,
@@ -1085,7 +1062,7 @@ form {
     border-radius: 0.8rem;
     display: flex;
     flex-direction: column;
-    height: 2rem;
+    /* height:   2rem; */
 }
 
 .contact-name input,
@@ -1103,7 +1080,7 @@ form {
 }
 
 .contact-message {
-    height: 13rem;
+    /* height: 13rem; */
     grid-column: 1/-1;
 }
 
@@ -1123,17 +1100,12 @@ form {
 
 /**********Footer*******/
 .footer {
-    /* height: 100%; */
     width: 100%;
-    /* background-color: var(--fname); */
     background-color: var(--scdBckColor);
-
-    /* padding: 1%; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    /* gap: 30%; */
 }
 
 .foot-content {
