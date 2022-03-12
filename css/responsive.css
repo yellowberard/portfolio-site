@@ -393,6 +393,10 @@
     .contact-message {
         padding: 0.2rem;
     }
+
+    .certificate-head {
+        font-size: 3.4rem;
+    }
 }
 
 @media(max-width:320px) {
@@ -437,5 +441,9 @@
     .contact-subject,
     .contact-message {
         padding: 0.2rem;
+    }
+
+    .certificate-head {
+        font-size: 3.4rem;
     }
 }

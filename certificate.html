@@ -89,7 +89,7 @@
                             </p>
                         </div>
                         <div class="certi-btn">
-                            <a href="https://drive.google.com/file/d/1iflvnkG_Mx_5XtUD7hzb7HxfBKhjAFYj/view?usp=sharing" class="button" target="_blank">View
+                            <a onclick="show_certificate(5)" class="button" target="_blank">View
                                 Certificate <span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
                         </div>
                     </div>
@@ -111,7 +111,7 @@
                             </p>
                         </div>
                         <div class="certi-btn">
-                            <a href="https://drive.google.com/file/d/19exsJKfjXNsCLTNFGQtSCGYMgsfhd-Ig/view?usp=sharing" class="button" target="_blank">View
+                            <a onclick="show_certificate(4)" class="button" target="_blank">View
                                 Certificate <span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
                         </div>
                     </div>
@@ -131,7 +131,7 @@
                             </p>
                         </div>
                         <div class="certi-btn">
-                            <a href="https://drive.google.com/file/d/1gVPM0oXam1Eq7Cg49vOEaq2UJO7yuPp3/view?usp=sharing" target="_blank" class="button">View
+                            <a onclick="show_certificate(3)" target="_blank" class="button">View
                                 Certificate <span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
                         </div>
                     </div>
@@ -153,7 +153,7 @@
                             </p>
                         </div>
                         <div class="certi-btn">
-                            <a href="https://drive.google.com/file/d/1Fu5KEanPxSPTgFooY6DmHm5_mKvb9--h/view?usp=sharing" target="_blank" class="button">View
+                            <a onclick="show_certificate(2)" target="_blank" class="button">View
                                 Certificate <span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
                         </div>
                     </div>
@@ -172,7 +172,7 @@
                             </p>
                         </div>
                         <div class="certi-btn">
-                            <a href="https://drive.google.com/file/d/1znAMneAD41jO_GV65t5tXyFjyoitGUps/view?usp=sharing" class="button" target="_blank">View
+                            <a onclick="show_certificate(1)" class="button" target="_blank">View
                                 Certificate <span class="iconify" data-icon="akar-icons:arrow-right"></span> </a>
                         </div>
                     </div>
@@ -195,13 +195,18 @@
                             </p>
                         </div>
                         <div class="certi-btn">
-                            <a href="https://drive.google.com/file/d/1KdPnuj7XfNDWky6OXqvI43lvUc8wdTUX/view?usp=sharing" class="button" target="_blank">View
+                            <a onclick="show_certificate(0)" class="button" target="_blank">View
                                 Certificate <span class="iconify" data-icon="akar-icons:arrow-right"></span></a>
                         </div>
                     </div>
 
                 </div>
             </div>
+            <div id="myModal" class="modal">
+                <span class="close" onclick="close_modal()">&times;</span>
+                <img class="modal-content" id="img01">
+            </div>
+
             <div class="footer">
                 <div class="foot-content">
                     <div class="foot-name">
@@ -222,6 +227,7 @@
             </div>
         </div>
         <script src="scripts/app.js"></script>
+        <script src="scripts/modal.js"></script>
         <script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
 
     </body>
