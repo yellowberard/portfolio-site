@@ -254,16 +254,29 @@
     .timeline-dot {
         left: 0;
     }
+
+
+    .contact-name,
+    .contact-email,
+    .contact-subject,
+    .contact-message {
+        padding: 0.6rem;
+    }
 }
 
 @media (max-width:600px) {
     .header-small-head {
         gap: 30%;
+        padding: 1%;
+    }
+
+    .home {
+        padding-top: 3%;
     }
 
     .bob {
         /* margin-top: 8%; */
-        width: 22rem;
+        width: 24rem;
     }
 
     .home-bob {
@@ -299,6 +312,21 @@
         width: 90%;
     }
 
+    .timeline-content {
+        width: 100%;
+    }
+
+    .contact-form-container {
+        width: 80%;
+    }
+
+    .contact-name,
+    .contact-email,
+    .contact-subject,
+    .contact-message {
+        padding: 0.6rem;
+    }
+
 }
 
 @media(max-width:424px) {
@@ -321,13 +349,17 @@
     }
 
     .about-img {
-        width: 18rem;
+        width: 16rem;
         height: 18rem;
     }
 
     .about-img img {
-        width: 17rem;
-        height: 17rem;
+        width: 14.5rem;
+        height: 16rem;
+    }
+
+    .about-content {
+        margin: 2.5rem
     }
 
     .about-head,
@@ -335,7 +367,31 @@
     .qual-head,
     .contact-head,
     .project-head {
-        font-size: 3.4rem;
+        font-size: 3.1rem;
+    }
+
+    .qual-head span:nth-child(2) {
+        font-size: 0.7rem;
+    }
+
+    .project-head span:nth-child(2) {
+        font-size: 0.7rem;
+    }
+
+    .timeline-content {
+        width: 100%;
+    }
+
+
+    .contact-form-container {
+        width: 80%;
+    }
+
+    .contact-name,
+    .contact-email,
+    .contact-subject,
+    .contact-message {
+        padding: 0.2rem;
     }
 }
 
@@ -376,8 +432,10 @@
         width: 100%;
     }
 
-    .qual-head span:nth-child(2) {
-        font-size: 0.7rem;
-
+    .contact-name,
+    .contact-email,
+    .contact-subject,
+    .contact-message {
+        padding: 0.2rem;
     }
 }
