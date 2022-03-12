@@ -144,6 +144,25 @@
     .slide video {
         width: 90%;
     }
+
+    .contact-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .contact-social-display {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-form-container {
+        margin-top: 5%;
+        width: 80%;
+    }
+
 }
 
 @media(max-width: 767px) {
@@ -250,6 +269,22 @@
     .timeline-content {
         width: 100%;
     }
+
+    .contact-social-display {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-form {
+        grid-gap: 0.4rem;
+    }
+
+    .contact-form-container {
+        margin-top: 5%;
+        width: 90%;
+    }
+
 }
 
 @media(max-width:424px) {

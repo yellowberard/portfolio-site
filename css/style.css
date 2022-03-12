@@ -1221,11 +1221,7 @@ a {
 
 .contact-form-container {
     width: 50%;
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
     overflow: hidden;
-    /* align-items: center; */
 }
 
 form {
@@ -1237,13 +1233,12 @@ form {
 }
 
 .contact-form {
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0.7rem;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
 }
 
 .contact-form label {
@@ -1274,7 +1269,6 @@ form {
 
 .contact-subject {
     grid-column: 1/-1;
-
 }
 
 .contact-message {
@@ -1288,7 +1282,7 @@ form {
     justify-content: center;
     align-items: center;
     gap: 10%;
-    width: 30%;
+    width: 8rem;
     cursor: pointer;
 }
 
