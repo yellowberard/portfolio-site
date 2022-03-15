@@ -100,7 +100,7 @@
 @media(max-width:850px) {
     .header {
         opacity: 0;
-
+        display: flex;
     }
 
     .header-small-head {
