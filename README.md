@@ -1,7 +1,17 @@
 # Personal Portfolio
-This is my personal portfolio website.
+This is my personal portfolio website. Here you will find my most relevant information about me. I Have tried to make it as responsive as I could.
 
-You can access the website: <a href="https://www.mayankgoel.co.in/">here</a>
+Here you will find:-
+- My Resume
+- About Me
+- Skills
+- Qualifications
+- Projects
+- Contact Me
+
+It also has Dark Mode for people who like the dark side.
+
+You can access the website <a href="https://www.mayankgoel.co.in/">here</a>.
 
 # Tech Stack
 * HTML
