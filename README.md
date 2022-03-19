@@ -1,5 +1,5 @@
 # Personal Portfolio
-This is my personal portfolio website. Here you will find my most relevant information about me. I Have tried to make it as responsive as I could.
+This is my personal portfolio website. I Have tried to make it as responsive as I could.
 
 Here you will find:-
 - My Resume
@@ -10,6 +10,8 @@ Here you will find:-
 - Contact Me
 
 It also has Dark Mode for people who like the dark side.
+
+I try to keep this website updated as frequently as I can.
 
 You can access the website <a href="https://www.mayankgoel.co.in/">here</a>.
 
