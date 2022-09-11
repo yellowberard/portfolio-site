@@ -6,7 +6,6 @@ lightBtn[0].addEventListener("click", function () {
     lightBtn[0].classList.add('hide');
     document.documentElement.setAttribute('data-theme', 'light');
     localStorage.setItem('theme', 'light');
-
 });
 darkBtn[0].addEventListener("click", function () {
     lightBtn[0].classList.remove('hide');
