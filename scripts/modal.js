@@ -6,6 +6,8 @@ function show_certificate(num) {
         "media/ltc.png",
         "media/nasa21.png",
         "media/gwoc21.png",
+        "media/GSSoC2022.png",
+        "media/basil_certificate.jpg",
     ];
 
     document.getElementById("myModal").style.display = "block";
