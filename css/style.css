@@ -771,14 +771,14 @@ a {
 .certi-grid-container {
     padding-top: 10rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 2fr));
     column-gap: 6rem;
     row-gap: 1rem;
     width: 80%;
 }
 
 .certi-container {
-    height: 350px;
+    height: auto;
     width: auto;
     border-radius: 0.6rem;
     border: 2px solid var(--fname);
