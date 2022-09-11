@@ -468,13 +468,14 @@ a {
 }
 
 .card-label {
-    padding: 0.5rem;
+    padding: 0.7rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
     height: 7rem;
     gap: 10%;
+    border-radius: 1rem;
     background-color: var(--trdBCkcolor);
 }
 
@@ -532,11 +533,13 @@ a {
 
 .card-content {
     animation: ease-in;
-    padding: 0.5rem;
+    padding: 0.9rem;
     width: 100%;
     height: auto;
     background-color: var(--scdBckColor);
     cursor: text;
+    border-radius: 1rem;
+
 }
 
 .skill-specs {
@@ -662,6 +665,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     position: relative;
+
 }
 
 .timeline-items::before {
@@ -677,6 +681,8 @@ a {
     margin-bottom: 10px;
     width: 80%;
     position: relative;
+    border-radius: 1rem;
+
 }
 
 .timeline-item:last-child {
@@ -714,6 +720,8 @@ a {
     padding: 1rem;
     border-radius: 5px;
     cursor: text;
+    border-radius: 1rem;
+
 }
 
 .timeline-content h3 {
